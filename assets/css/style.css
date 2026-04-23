@@ -20,7 +20,7 @@
     font-family: "Raleway";
     src: url(../fonts/Raleway-Italic.ttf);
     font-weight: 400;
-    font-style: italic;*
+    font-style: italic;
     font-display: swap;
 }
 
@@ -32,11 +32,86 @@ body{
 
 #page{
     max-width: 1160px;
-    margin: auto;
+    margin: 0 auto;
     font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
 }
 
 h1, h2, h3{
     font-family: "Lato", sans-serif;
 }
 
+/* ======== HEADER ======== */
+
+header{
+    background-color: #17ABB3;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* Positionnement, taille et bordure photo*/
+.photo-container{
+    flex-basis: 30%;
+    text-align: center;
+}
+
+#profile_photo{
+    flex-basis: 30%;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+/* Positionnement titres et infos*/
+.identity{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+    justify-content: center;
+}
+
+.identity h1{
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0.1em;
+}
+
+.identity h2{
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0.1em;
+}
+
+.infos {
+    flex-basis: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: smaller;
+}
+
+.infos li {
+    display: block;
+    flex-basis: 50%;
+    margin-bottom: 6px;
+}
+
+.infos a {
+    color: white;
+    text-decoration: none;
+}
+
+.infos a:hover{
+    color: yellow;
+}
