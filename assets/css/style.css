@@ -37,7 +37,7 @@ body{
     box-sizing: border-box;
 }
 
-h1, h2,{
+h1, h2{
     font-family: "Lato", sans-serif;
 }
 
@@ -150,8 +150,7 @@ main{
 
 /* === Colonne de gauche === */
 .block{
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: 1em 0;
 }
 
 .stars-list{
@@ -189,3 +188,42 @@ main{
 .quality li::marker{
     color: #17ABB3;
 }
+
+/* === Colonne de droite === */
+
+.description{
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.formation-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1em;
+    padding-left: 1em; ;
+    }
+.formation-item:hover{
+    background-color: #E3E3E3;
+    border-left: 1em solid #17ABB3;
+}
+.formation-item .left{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.formation-item .right{
+    text-align: right;
+    color: #17ABB3;
+}
+
+
+/* ======== FOOTER ========*/
+
+
+
+
+
+
